@@ -1,0 +1,62 @@
+/* App-facing aliases for the typography and primitives in reference.css. */
+:root {
+  --mosol9-black: var(--_primitives---colors--brand-black, #000000);
+  --mosol9-paper: var(--_primitives---colors--brandwhite, #eeeeee);
+  --mosol9-yellow: #ffdd00;
+  --mosol9-purple: var(--mosol9-yellow);
+  --mosol9-green: var(--mosol9-yellow);
+  --mosol9-neutral-light: var(--_primitives---colors--neutral-lighter, #d9d9d9);
+  --mosol9-neutral-dark: var(--_primitives---colors--neutral-dark, #595959);
+  --mosol9-ink-muted: #afafaf;
+
+  --font-display: var(--_typography---font-styles--heading, "Reckless Standard M", Georgia, serif);
+  --font-display-book: "Reckless Standard M", Georgia, serif;
+  --font-body: var(--_typography---font-styles--body, "Area Inktrap", Arial, sans-serif);
+  --font-body-light: var(--_typography---font-styles--body, "Area Inktrap", Arial, sans-serif);
+  --font-mono: var(--_typography---font-styles--links-font, "Martian Mono", ui-monospace, monospace);
+
+  --font-weight-thin: 100;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --text-heading-h1: 5.3125rem;
+  --text-heading-h2: 4.0625rem;
+  --text-heading-h3: 2.25rem;
+  --text-heading-h4: 2rem;
+  --text-body: 1rem;
+  --text-label: .6875rem;
+
+  --color-bg-dark: var(--mosol9-black);
+  --color-bg-light: var(--mosol9-paper);
+  --color-text-on-dark: var(--mosol9-paper);
+  --color-text-on-light: var(--mosol9-black);
+  --color-accent: var(--mosol9-yellow);
+  --color-border-dark: rgba(238, 238, 238, .35);
+  --color-border-light: var(--_primitives---opacity--neutral-darkest-15, rgba(0, 0, 0, .15));
+  --color-border-active: var(--mosol9-yellow);
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+  --layout-max-width: 1320px;
+  --layout-gutter: 60px;
+
+  --duration-fast: 220ms;
+  --duration-standard: 360ms;
+  --duration-slow: 700ms;
+  --ease-standard: cubic-bezier(.16, 1, .3, 1);
+  --z-navigation: 50;
+  --focus-outline: 2px solid var(--mosol9-yellow);
+  --focus-outline-on-dark: 2px solid var(--mosol9-paper);
+  --focus-outline-on-light: 2px solid var(--mosol9-black);
+  --focus-outline-offset: 4px;
+}
