@@ -111,8 +111,7 @@ export default function MotionPathSection() {
           }, 0)
           .to(topText, { autoAlpha: 1, y: 0, duration: 0.18, ease: "power2.out" }, 0.3)
           .to(arrow, { autoAlpha: 1, y: 0, duration: 0.15, ease: "power2.out" }, 0.64)
-          .to(bottomText, { autoAlpha: 1, y: 0, duration: 0.2, ease: "power2.out" }, 0.68)
-          .to(link, { autoAlpha: 1, y: 0, duration: 0.16, ease: "power2.out" }, 0.82);
+          .to(bottomText, { autoAlpha: 1, y: 0, duration: 0.2, ease: "power2.out" }, 0.68);
       } catch (error) {
         console.error("Motion path animation could not initialize.", error);
       }
