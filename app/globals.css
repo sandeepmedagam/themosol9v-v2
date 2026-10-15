@@ -1553,21 +1553,21 @@ textarea.w-input,textarea.w-select {
 }
 
 .w-lightbox-left {
-    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0yMCAwIDI0IDQwIiB3aWR0aD0iMjQiIGhlaWdodD0iNDAiPjxnIHRyYW5zZm9ybT0icm90YXRlKDQ1KSI+PHBhdGggZD0ibTAgMGg1djIzaDIzdjVoLTI4eiIgb3BhY2l0eT0iLjQiLz48cGF0aCBkPSJtMSAxaDN2MjNoMjN2M2gtMjZ6IiBmaWxsPSIjZmZmIi8+PC9nPjwvc3ZnPg==);
+    background-image: none;
     display: none;
     bottom: 0;
     left: 0
 }
 
 .w-lightbox-right {
-    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii00IDAgMjQgNDAiIHdpZHRoPSIyNCIgaGVpZ2h0PSI0MCI+PGcgdHJhbnNmb3JtPSJyb3RhdGUoNDUpIj48cGF0aCBkPSJtMC0waDI4djI4aC01di0yM2gtMjN6IiBvcGFjaXR5PSIuNCIvPjxwYXRoIGQ9Im0xIDFoMjZ2MjZoLTN2LTIzaC0yM3oiIGZpbGw9IiNmZmYiLz48L2c+PC9zdmc+);
+    background-image: none;
     display: none;
     bottom: 0;
     right: 0
 }
 
 .w-lightbox-close {
-    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii00IDAgMTggMTciIHdpZHRoPSIxOCIgaGVpZ2h0PSIxNyI+PGcgdHJhbnNmb3JtPSJyb3RhdGUoNDUpIj48cGF0aCBkPSJtMCAwaDd2LTdoNXY3aDd2NWgtN3Y3aC01di03aC03eiIgb3BhY2l0eT0iLjQiLz48cGF0aCBkPSJtMSAxaDd2LTdoM3Y3aDd2M2gtN3Y3aC0zdi03aC03eiIgZmlsbD0iI2ZmZiIvPjwvZz48L3N2Zz4=);
+    background-image: none;
     background-size: 18px;
     height: 2.6em;
     right: 0
@@ -4203,7 +4203,7 @@ figcaption {
 
 .header5_content {
     z-index: 1;
-    background-image: url(https://cdn.prod.website-files.com/69b293a8de2706e604a565ce/69b2ac14119032aa02ee06cc_Perspective%20Grid.svg);
+    background-image: none;
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: auto;
@@ -4700,7 +4700,7 @@ figcaption {
     background-color: var(--_primitives---colors--neutral-lighter);
     width: 100%;
     color: var(--_primitives---colors--brand-black);
-    background-image: url(https://cdn.prod.website-files.com/69b293a8de2706e604a565ce/69b9091625cb4f9206f394b8_Frame%20262.svg);
+    background-image: none;
     background-size: cover
 }
 
@@ -4816,7 +4816,7 @@ figcaption {
 }
 
 .client-section-heading-img {
-    background-image: url(https://cdn.prod.website-files.com/69b293a8de2706e604a565ce/69b2b054fc14a2877099498f_Rectangle%2037.avif);
+    background-image: none;
     background-position: 50%;
     background-size: cover;
     width: 10rem;
@@ -6220,7 +6220,7 @@ figcaption {
     width: 32px;
     height: 95%;
     color: var(--_primitives---opacity--transparent);
-    background-image: url(https://cdn.prod.website-files.com/69b293a8de2706e604a565ce/69bd0345734dc85c8e71072e_Frame%20293.svg);
+    background-image: none;
     background-position: 50%;
     background-size: cover;
     padding: 0;
@@ -6915,7 +6915,7 @@ figcaption {
 }
 
 .team-founder-badge {
-    background-image: url(https://cdn.prod.website-files.com/69b293a8de2706e604a565ce/69dcf3e7af0be29a110ff337__BadgeStatuIndicatorDot.svg),linear-gradient(30deg,var(--_primitives---colors--brand-purple),var(--_primitives---colors--brand-black));
+    background-image: linear-gradient(30deg,var(--_primitives---colors--brand-purple),var(--_primitives---colors--brand-black));
     background-position: 20px,0 0;
     background-repeat: no-repeat,repeat;
     background-size: 8px 8px,auto;
@@ -11013,7 +11013,10 @@ main > section:not(.hero):not(.ticker):not(.zero-faq-section) { padding-inline: 
 .stats-section .stats-grid article p { grid-column: 1; }
 .testimonial-card__portrait { background: #202020; }
 .testimonial-card__portrait::before { display: none; }
-.testimonial-card__portrait .testimonial-card__attribution { right: 56px; }
+.testimonial-card__portrait .testimonial-card__attribution { position: absolute; z-index: 2; right: 56px; bottom: clamp(28px, 2.4vw, 48px); left: clamp(24px, 2.5vw, 54px); display: grid; justify-items: start; max-width: min(76%, 640px); gap: 9px; color: #f4f2f2; text-align: left; }
+.testimonial-card__attribution strong { font-size: clamp(1.35rem, 2vw, 2.3rem); font-weight: 400; }
+.testimonial-card__attribution > span { font-size: clamp(1rem, 1.45vw, 1.6rem); }
+.testimonial-card__attribution em { margin-left: .12em; font-family: var(--font-display); font-weight: 400; }
 .team-roster__row { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
 .team-roster__row > p { grid-column: 2; }
 .team-roster__row:hover > p, .team-roster__row:focus-visible > p { transform: none; }
@@ -11025,5 +11028,6 @@ main > section:not(.hero):not(.ticker):not(.zero-faq-section) { padding-inline: 
 }
 @media (max-width: 640px) {
   .team-roster__row { grid-template-columns: minmax(0, 1fr); }
+  .team-roster__identity { grid-column: 1; }
   .team-roster__row > p { grid-column: 1; }
 }
