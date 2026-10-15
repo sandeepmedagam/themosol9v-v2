@@ -78,8 +78,7 @@ export default function MotionPathSection() {
         const topText = section.querySelector<HTMLElement>(".motion-feature__top-copy");
         const arrow = section.querySelector<HTMLElement>(".motion-feature__arrow");
         const bottomText = section.querySelector<HTMLElement>(".motion-feature__bottom-copy");
-        const link = section.querySelector<HTMLElement>(".motion-feature__link");
-        if (!path || !orb || !topText || !arrow || !bottomText || !link) return;
+        if (!path || !orb || !topText || !arrow || !bottomText) return;
 
         const gsap = window.gsap;
         gsap.registerPlugin(window.ScrollTrigger, window.DrawSVGPlugin, window.MotionPathPlugin);
@@ -87,7 +86,7 @@ export default function MotionPathSection() {
 
         gsap.set(path, { drawSVG: "0%" });
         gsap.set(orb, { autoAlpha: 0, scale: 0.25, transformOrigin: "50% 50%" });
-        gsap.set([topText, arrow, bottomText, link], { autoAlpha: 0, y: 24 });
+        gsap.set([topText, arrow, bottomText], { autoAlpha: 0, y: 24 });
 
         const desktop = window.matchMedia("(min-width: 761px)").matches;
         timeline = gsap.timeline({
@@ -151,7 +150,6 @@ export default function MotionPathSection() {
         <h2 className="motion-feature__top-copy" id="motion-feature-title">big ideas<br /><em>deserve</em></h2>
         <span className="motion-feature__arrow" aria-hidden="true">↗</span>
         <p className="motion-feature__bottom-copy">sharp<br />backers</p>
-        <a className="motion-feature__link" href="https://one-venturestudio.notion.site/One-Venture-Fund-coming-soon-33e465a6e52180799061e84fb9a75505">One Venture Fund <span aria-hidden="true">↗</span></a>
       </div>
     </section>
   );

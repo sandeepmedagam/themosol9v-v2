@@ -24,7 +24,7 @@ export default function SiteHeader() {
 
   return (
     <header className="site-header">
-      <a className="wordmark wordmark--ovs" href="#home" aria-label="The Mosol9 home">
+      <a className="wordmark wordmark--mosol9" href="#home" aria-label="The Mosol9 home">
         <span>The</span><span>Mosol9<span className="wordmark__dot">.</span></span>
       </a>
 

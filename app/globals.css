@@ -2876,11 +2876,6 @@ figcaption {
     line-height: 1.2
 }
 
-.heading-style-h1.is-fund-section {
-    text-transform: uppercase;
-    font-size: 6.25rem;
-    line-height: 1.1
-}
 
 .form_checkbox-icon {
     border: 1px solid var(--_primitives---opacity--neutral-darkest-15);
@@ -7216,9 +7211,6 @@ figcaption {
         font-size: 3.25rem
     }
 
-    .heading-style-h1.is-fund-section {
-        font-size: 5rem
-    }
 
     .heading-style-h4 {
         font-size: 1.75rem
@@ -8101,9 +8093,6 @@ figcaption {
         font-size: 2.5rem
     }
 
-    .heading-style-h1.is-fund-section {
-        font-size: 3rem
-    }
 
     .heading-style-h4 {
         font-size: 1.5rem;
@@ -9696,12 +9685,12 @@ a:focus-visible, button:focus-visible { outline: var(--focus-outline); outline-o
   .hero__brand > span { animation: none; }
 }
 
-/* One Venture Studio homepage sections */
-.wordmark--ovs { gap: 0; font-size: 22px; font-weight: 600; letter-spacing: -.075em; line-height: .8; }
-.wordmark--ovs span { display: block; }
-.wordmark--ovs span:last-child { color: var(--mosol9-purple); font-size: 1em; }
-.wordmark--ovs > span:last-child { color: currentColor; }
-.wordmark--ovs .wordmark__dot { display: inline; color: var(--mosol9-yellow); }
+/* Mosol9 homepage sections */
+.wordmark--mosol9 { gap: 0; font-size: 22px; font-weight: 600; letter-spacing: -.075em; line-height: .8; }
+.wordmark--mosol9 span { display: block; }
+.wordmark--mosol9 span:last-child { color: var(--mosol9-purple); font-size: 1em; }
+.wordmark--mosol9 > span:last-child { color: currentColor; }
+.wordmark--mosol9 .wordmark__dot { display: inline; color: var(--mosol9-yellow); }
 .service-card { padding-top: 0; }
 .service-card__image { width: calc(100% + 56px); }
 .team-card__visual { object-position: center; }
@@ -9828,11 +9817,6 @@ a:focus-visible, button:focus-visible { outline: var(--focus-outline); outline-o
 .team-card__visual { display: block; width: 100%; aspect-ratio: .85; margin-bottom: 18px; background: #d4d2d0; object-fit: cover; }
 .team-grid h3 { margin: 0 0 8px; font-size: clamp(1.3rem, 1.9vw, 2rem); }
 .team-grid p { font-size: .9rem; }
-.fund-section { display: flex; min-height: 460px; flex-direction: column; align-items: center; justify-content: center; padding: 80px 24px; text-align: center; }
-.fund-section h2 { margin: 35px 0; font-family: var(--font-display); font-size: clamp(5rem, 12vw, 12rem); font-weight: 400; letter-spacing: -.075em; line-height: .9; }
-.fund-section h2 span { color: var(--mosol9-purple); }
-.outline-link { display: inline-flex; min-height: 48px; align-items: center; gap: 30px; padding: 0 18px; border: 1px solid var(--color-border-dark); color: inherit; font-family: var(--font-mono); font-size: 11px; text-decoration: none; text-transform: uppercase; }
-.outline-link:hover { border-color: var(--mosol9-yellow); }
 .contact-section { display: grid; grid-template-columns: 1.2fr .8fr; gap: 48px; padding: clamp(70px, 9vw, 130px) clamp(24px, 7vw, 100px); }
 .contact-heading { position: relative; }
 .contact-heading h2 { margin: 30px 0 0; font-family: var(--font-display); font-size: clamp(4.5rem, 10vw, 10rem); font-weight: 400; letter-spacing: -.07em; line-height: .84; }
@@ -9919,7 +9903,6 @@ a:focus-visible, button:focus-visible { outline: var(--focus-outline); outline-o
   .approach-list li { grid-template-columns: 36px 1fr auto; gap: 12px; }
   .team-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 16px; }
   .team-card__visual { aspect-ratio: .9; }
-  .fund-section { min-height: 360px; }
   .contact-section { gap: 50px; padding: 64px 20px; }
   .contact-heading h2 { font-size: clamp(4rem, 19vw, 7rem); }
   .contact-spark { right: 4%; }
@@ -10211,19 +10194,14 @@ a:focus-visible, button:focus-visible { outline: var(--focus-outline); outline-o
 .motion-feature__top-copy em { font-style: italic; }
 .motion-feature__bottom-copy { top: 34%; left: 61%; }
 .motion-feature__arrow { position: absolute; z-index: 1; top: 25%; left: 59%; color: #ffdd00; font-family: var(--font-body); font-size: clamp(3rem, 5vw, 5.6rem); font-weight: 300; line-height: 1; }
-.motion-feature__link { position: absolute; z-index: 1; right: clamp(24px, 7vw, 110px); bottom: clamp(24px, 6vh, 72px); display: inline-flex; align-items: center; gap: 12px; color: #d7d5dc; font-family: var(--font-mono); font-size: 11px; letter-spacing: .02em; text-decoration: none; }
-.motion-feature__link span { color: #ffdd00; font-size: 16px; transition: transform 180ms ease; }
-.motion-feature__link:hover span { transform: translate(3px, -3px); }
 @media (max-width: 760px) {
   .motion-feature { height: 82svh; min-height: 580px; }
   .motion-feature__svg { inset: 0 -35%; width: 170%; }
   .motion-feature__top-copy { top: 26%; left: 8%; font-size: clamp(2.5rem, 11vw, 4rem); }
   .motion-feature__arrow { top: 48%; left: 58%; font-size: 3.5rem; }
   .motion-feature__bottom-copy { top: 57%; right: 8%; left: auto; font-size: clamp(2.5rem, 11vw, 4rem); }
-  .motion-feature__link { right: 8%; bottom: 8%; }
 }
 @media (prefers-reduced-motion: reduce) {
-  .motion-feature__link span { transition: none; }
 }
 
 /* Execution by Numbers reference composition */
@@ -10631,16 +10609,8 @@ a:focus-visible, button:focus-visible { outline: var(--focus-outline); outline-o
   .zero-one__token { transition: none; }
 }
 
-/* One Venture Fund coming-soon moment. */
-.fund-section { position: relative; min-height: 100svh; overflow: hidden; padding: clamp(36px, 6vh, 80px) 24px; background: #050505; text-align: center; }
-.team-section > .fund-section { min-height: 0; padding: clamp(40px, 5vh, 64px) 24px 0; border-top: 1px solid rgba(235,235,235,.24); }
-.fund-section__title { position: relative; width: fit-content; margin: 0 auto clamp(26px, 3.5vw, 48px); }
-.fund-section__title h2 { margin: 0; font-size: clamp(4rem, 6.4vw, 8rem); letter-spacing: -.065em; line-height: .92; text-align: center; }
-.fund-section__title h2 span { color: #ffdd00; }
-.fund-section__badge { position: absolute; z-index: 1; top: 1%; left: 50%; display: inline-flex; min-height: clamp(38px, 3.7vw, 58px); align-items: center; padding: 0 clamp(14px, 1.5vw, 24px); border-radius: 999px; background: linear-gradient(105deg, #ffdd00, #fff2a3); color: #f8f7ff; font-family: var(--font-mono); font-size: clamp(.66rem, .78vw, .86rem); letter-spacing: .04em; white-space: nowrap; transform: translate(-76%, -22%) rotate(-24deg); }
-.fund-section .outline-link { position: relative; display: inline-flex; min-height: 54px; align-items: center; gap: 12px; padding: 0 18px; border: 1px solid rgba(235,235,235,.4); background: linear-gradient(110deg, #080808 8%, #ffdd00 100%); background-size: 180% 100%; background-position: left center; color: #f3f1ff; font-size: 11px; letter-spacing: .04em; transition: border-color 220ms ease, transform 260ms ease, background-position 350ms ease; }
-.fund-section .outline-link:hover, .fund-section .outline-link:focus-visible { border-color: #f3f1ff; background-position: right center; transform: translateY(-3px); }
-.fund-section__dot, .contact-form__button-dot { display: inline-block; width: 10px; height: 10px; flex: 0 0 10px; border-radius: 50%; background: #f5f5f5; }
+/* Contact button dot */
+.contact-form__button-dot { display: inline-block; width: 10px; height: 10px; flex: 0 0 10px; border-radius: 50%; background: #f5f5f5; }
 
 /* Contact heading and form share one clear two-column baseline. */
 .contact-section { min-height: 0; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); align-content: start; align-items: start; gap: clamp(40px, 6vw, 112px); padding: 30px clamp(24px, 7vw, 100px); background: #d8d8dc; }
@@ -10658,20 +10628,12 @@ a:focus-visible, button:focus-visible { outline: var(--focus-outline); outline-o
 .contact-form__button-dot { width: 9px; height: 9px; flex-basis: 9px; }
 .contact-form__notice { align-self: center; color: #49494b; font-size: .82rem; }
 @media (max-width: 900px) {
-  .fund-section { min-height: 100svh; }
-  .team-section > .fund-section { min-height: 0; padding: 36px 24px 0; }
-  .fund-section__title h2 { font-size: clamp(4.3rem, 8vw, 6rem); }
   .contact-section { min-height: 0; grid-template-columns: 1fr; gap: 38px; }
   .contact-heading { max-width: 600px; }
   .contact-heading h2 { font-size: clamp(3.4rem, 6vw, 4.6rem); }
   .contact-zero { left: clamp(250px, 32vw, 340px); right: auto; }
 }
 @media (max-width: 640px) {
-  .fund-section { min-height: 100svh; padding: 48px 20px; }
-  .team-section > .fund-section { min-height: 0; padding: 34px 20px 0; }
-  .fund-section__title { margin-bottom: 30px; }
-  .fund-section__title h2 { font-size: clamp(3.4rem, 13vw, 5rem); }
-  .fund-section__badge { min-height: 38px; font-size: .62rem; }
   .contact-section { min-height: 0; gap: 28px; padding: 30px 20px; }
   .contact-heading { padding-left: 42px; }
   .contact-heading > .section-index { top: .3em; font-size: 10px; }
@@ -10681,7 +10643,7 @@ a:focus-visible, button:focus-visible { outline: var(--focus-outline); outline-o
   .contact-form label:nth-child(3), .contact-form label:nth-child(4), .contact-form .primary-cta, .contact-form__notice { grid-column: auto; }
 }
 @media (prefers-reduced-motion: reduce) {
-  .fund-section .outline-link, .contact-form input, .contact-form textarea, .contact-form .primary-cta { transition: none; }
+  .contact-form input, .contact-form textarea, .contact-form .primary-cta { transition: none; }
 }
 
 /* Shared type scale for section headings and supporting copy. */
@@ -10715,8 +10677,6 @@ main section p, .site-footer p { font-size: 16px !important; }
 .footer-signup button:hover, .footer-signup button:focus-visible { color: #ffdd00; transform: translateX(4px); }
 .footer-bottom { display: grid; grid-template-columns: 1fr 1fr auto; align-items: center; gap: 24px; min-height: 76px; padding: 16px 0; border-top: 1px solid rgba(235,235,235,.38); border-bottom: 1px solid rgba(235,235,235,.38); color: #c4c1c4; font-family: var(--font-body); font-size: 14px; }
 .footer-bottom a { color: inherit; text-decoration: underline; text-underline-offset: 4px; }
-.footer-linkedin { display: grid; width: 34px; height: 34px; place-items: center; }
-.footer-linkedin svg { width: 27px; height: 27px; fill: currentColor; }
 .footer-wordmark { display: block; width: max-content; max-width: none; margin: 22px 0 -2.2vw; color: var(--mosol9-paper); font-family: var(--font-body); font-size: clamp(5rem, 14.4vw, 15rem); font-weight: 500; letter-spacing: -.09em; line-height: .95; text-decoration: none; text-transform: none; white-space: nowrap; }
 .footer-wordmark span { color: var(--mosol9-yellow); }
 @media (max-width: 760px) {
@@ -10728,8 +10688,6 @@ main section p, .site-footer p { font-size: 16px !important; }
   .footer-contact h2 { margin-bottom: 16px; font-size: 22px; }
   .footer-contact p { margin-bottom: 22px; }
   .footer-bottom { grid-template-columns: 1fr auto; gap: 8px 16px; padding-block: 16px; font-size: 12px; }
-  .footer-bottom > span:nth-child(2) { grid-column: 1; grid-row: 2; }
-  .footer-linkedin { grid-column: 2; grid-row: 1 / span 2; }
   .footer-wordmark { margin-top: 26px; font-size: 14.2vw; }
 }
 @media (max-width: 480px) {
@@ -10789,8 +10747,7 @@ main > section:not(.hero):not(.ticker):not(.zero-faq-section) { padding-inline: 
   .memory-game__score { padding: 6px 8px; }
 }
 
-/* Hide the fund feature and keep Build Momentum composed within one viewport. */
-.team-section > .fund-section { display: none; }
+/* Keep Build Momentum composed within one viewport. */
 .momentum-section { display: flex; min-height: 100svh; flex-direction: column; padding-block: clamp(32px, 5vh, 64px); }
 .momentum-section__heading { flex: 0 0 auto; margin-bottom: 0; }
 .momentum-section__heading h2 { font-size: clamp(2.8rem, 4.6vw, 5.4rem); }
@@ -10880,7 +10837,6 @@ main > section:not(.hero):not(.ticker):not(.zero-faq-section) { padding-inline: 
   .hero__brand { font-size: clamp(5.5rem, 24vw, 9rem); }
   .footer-wordmark { margin-top: 20px; font-size: 10vw; }
   .footer-bottom { grid-template-columns: 1fr auto; }
-  .footer-linkedin { grid-column: 2; grid-row: 1; }
 }
 @media (prefers-reduced-motion: reduce) {
   .footer-wordmark-track { animation: none; }
@@ -10965,8 +10921,7 @@ main > section:not(.hero):not(.ticker):not(.zero-faq-section) { padding-inline: 
 
 /* Angular framed CTA with the raised lower and side edge from the reference. */
 .book-call > span:last-child,
-.contact-form .primary-cta,
-.fund-section .outline-link {
+.contact-form .primary-cta {
   border: 1px solid #4a4a4a;
   border-left: 3px solid #111;
   border-bottom: 3px solid #111;
@@ -10975,10 +10930,8 @@ main > section:not(.hero):not(.ticker):not(.zero-faq-section) { padding-inline: 
 }
 .book-call:hover > span:last-child,
 .contact-form .primary-cta:hover,
-.fund-section .outline-link:hover { box-shadow: 4px 4px 0 -1px #a5a5a5, 6px 6px 0 -1px #292929; }
 .book-call:active > span:last-child,
 .contact-form .primary-cta:active,
-.fund-section .outline-link:active { transform: translate(2px, 2px); box-shadow: 2px 2px 0 -1px #a5a5a5, 4px 4px 0 -1px #292929; }
 
 .hero__brand {
   bottom: clamp(10px, 2vh, 24px);
@@ -10995,6 +10948,6 @@ main > section:not(.hero):not(.ticker):not(.zero-faq-section) { padding-inline: 
   .hero__brand { bottom: 12px; }
 }
 @media (prefers-reduced-motion: reduce) {
-  .book-call > span:last-child, .contact-form .primary-cta, .fund-section .outline-link { transition: none; }
+  .book-call > span:last-child, .contact-form .primary-cta { transition: none; }
 }
 

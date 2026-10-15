@@ -77,9 +77,9 @@ const stats = [
 
 const testimonials = [
   ["Bhuvish has helped our business tremendously. From ideation to fundraising strategy to building product. We couldn’t be more grateful for his contribution.", "Adam Franklin", "Founder & CEO, Twendi", "https://cdn.prod.website-files.com/69b904dc5a76c96c398c84f3/69cabf6d3af5ed228049802c_Adam%20_%20Twendi.avif"],
-  ["OVS delivered our product-spec site quickly with clear communication and professionalism. They understood our needs and built a reliable platform for managing product information.", "Tom McLernon", "Director, Ithaca Hummus", "https://cdn.prod.website-files.com/69b904dc5a76c96c398c84f3/69cabf82509b788add0b1b2b_Ithaca%20Hummus.avif"],
-  ["One Venture Studio delivered timely service and strong visual branding, fully understanding our goals. I’ll continue recommending promising opportunities to OVS.", "Ian Wilson, MD", "CEO & Co-Founder, Travelier IR Services LLC", "https://cdn.prod.website-files.com/69b904dc5a76c96c398c84f3/69cabf92599c96cf1cfccd10_Ian%20Wilson.avif"],
-  ["Team One Venture Studio provided strong design and architecture support and was a reliable partner throughout our project.", "Param Modi", "Product Development Engineer, HRA", "https://cdn.prod.website-files.com/69b904dc5a76c96c398c84f3/69cabf9b663d74611bce35ce_Param%20_%20HRA.avif"],
+  ["They delivered our product-spec site quickly with clear communication and professionalism. They understood our needs and built a reliable platform for managing product information.", "Tom McLernon", "Director, Ithaca Hummus", "https://cdn.prod.website-files.com/69b904dc5a76c96c398c84f3/69cabf82509b788add0b1b2b_Ithaca%20Hummus.avif"],
+  ["The team delivered timely service and strong visual branding, fully understanding our goals. I’ll continue recommending them to others.", "Ian Wilson, MD", "CEO & Co-Founder, Travelier IR Services LLC", "https://cdn.prod.website-files.com/69b904dc5a76c96c398c84f3/69cabf92599c96cf1cfccd10_Ian%20Wilson.avif"],
+  ["The team provided strong design and architecture support and was a reliable partner throughout our project.", "Param Modi", "Product Development Engineer, HRA", "https://cdn.prod.website-files.com/69b904dc5a76c96c398c84f3/69cabf9b663d74611bce35ce_Param%20_%20HRA.avif"],
 ];
 
 const faqs: [string, string][] = [
@@ -175,7 +175,6 @@ export default function HomePage() {
             <img className="team-roster__portrait" src={image} alt={name} loading="lazy" />
             <p>{copy}</p>
           </article>)}</div>
-          <div className="fund-section" aria-labelledby="fund-title"><div className="fund-section__title"><span className="fund-section__badge">ONE VENTURE FUND</span><h2 id="fund-title">COMING<br /><span>SOON...</span></h2></div><a className="outline-link" href="https://one-venturestudio.notion.site/One-Venture-Fund-coming-soon-33e465a6e52180799061e84fb9a75505" target="_blank" rel="noreferrer"><span className="fund-section__dot" aria-hidden="true" />KNOW MORE</a></div>
         </section>
 
         <section className="contact-section section-light" id="contact"><div className="contact-heading"><IndexTag>01011</IndexTag><h2>Ready to<br />flip the bit?</h2><svg className="contact-zero" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 2 59 9 70 5 76 16 88 17 89 30 99 38 94 50 99 62 89 70 88 83 76 84 70 95 59 91 50 98 41 91 30 95 24 84 12 83 11 70 1 62 6 50 1 38 11 30 12 17 24 16 30 5 41 9Z" fill="#ffdd00" stroke="#111" strokeWidth="3"/><text x="50" y="63" textAnchor="middle" fontFamily="monospace" fontSize="42" fontWeight="700" fill="#111">Ø</text></svg></div><ContactForm /></section>
@@ -207,7 +206,6 @@ export default function HomePage() {
           </div>
           <div className="footer-bottom">
             <span>© 2026 All Rights Reserved · Made by Web Anatomy</span>
-            <a className="footer-linkedin" href="https://www.linkedin.com/company/one-venture-studio/" target="_blank" rel="noreferrer" aria-label="The Mosol9 on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="2.5" fill="none" stroke="currentColor" strokeWidth="1.8" /><path d="M7 9.3h2.5V17H7V9.3Zm1.25-3.7a1.45 1.45 0 1 1 0 2.9 1.45 1.45 0 0 1 0-2.9ZM11 9.3h2.4v1.05c.35-.66 1.12-1.28 2.34-1.28 2.48 0 2.94 1.63 2.94 3.75V17h-2.5v-3.7c0-.88-.02-2.02-1.23-2.02-1.24 0-1.43.96-1.43 1.96V17H11V9.3Z" fill="currentColor" /></svg></a>
           </div>
             <div className="footer-wordmark-marquee" role="img" aria-label="The Mosol9">
               <div className="footer-wordmark-track" aria-hidden="true">
