@@ -6,6 +6,7 @@ export type Testimonial = {
   quote: string;
   name: string;
   role: string;
+  image: string;
 };
 
 export default function Testimonials({ items }: { items: Testimonial[] }) {
@@ -24,13 +25,14 @@ export default function Testimonials({ items }: { items: Testimonial[] }) {
         <span className="testimonials__rule" aria-hidden="true" />
       </header>
       <div className="testimonials__layout">
-        <div className="testimonial-card__portrait" key={`portrait-${activeIndex}`}>
-          <div className="testimonial-card__attribution">
+        <figure className="testimonial-card__portrait" key={`portrait-${activeIndex}`}>
+          <img src={active.image} alt={`Portrait of ${active.name}`} />
+          <figcaption className="testimonial-card__attribution">
             <strong>{active.name}</strong>
             <span>{roleTitle}{company && <em>, {company}</em>}</span>
-          </div>
+          </figcaption>
           <span className="testimonial-card__count" aria-hidden="true">{activeIndex + 1}</span>
-        </div>
+        </figure>
         <div className="testimonial-card__content" aria-live="polite" aria-atomic="true">
           <span className="testimonial-card__quote-mark" aria-hidden="true">“</span>
           <blockquote key={`quote-${activeIndex}`}>

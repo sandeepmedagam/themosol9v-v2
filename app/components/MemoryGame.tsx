@@ -4,6 +4,10 @@ import { useEffect, useRef, useState, type CSSProperties } from "react";
 
 const cardPairs = [0, 5, 9, 2, 11, 4, 13, 6, 1, 8, 3, 12, 7, 10, 2, 11, 4, 13, 6, 1, 8, 3, 12, 0, 7, 10, 5, 9];
 
+function MemoryBlob() {
+  return <img className="memory-game__blob" src="https://cdn.prod.website-files.com/69b293a8de2706e604a565ce/69b39e12e42317f4ae002c9f_gameicon.avif" alt="" loading="lazy" />;
+}
+
 export default function MemoryGame() {
   const [revealed, setRevealed] = useState<number[]>([]);
   const [matched, setMatched] = useState<number[]>([0, 23]);
@@ -42,6 +46,9 @@ export default function MemoryGame() {
 
   return (
     <section className="memory-game" aria-labelledby="play-title">
+      <div className="memory-game__annotation" aria-hidden="true">
+        <img src="https://cdn.prod.website-files.com/69b293a8de2706e604a565ce/69d8f3f3eb53df1056280750_memory%20game%20float%20indicator.svg" alt="" />
+      </div>
       <div className="memory-game__board" role="group" aria-label="Memory game board">
         {cardPairs.map((pair, index) => {
           const isMatched = matched.includes(index);
@@ -57,7 +64,7 @@ export default function MemoryGame() {
               aria-label={isMatched ? `Matched card ${index + 1}` : isRevealed ? `Revealed card ${index + 1}` : `Reveal card ${index + 1}`}
               aria-pressed={isOpen}
             >
-              {isOpen && <span className="memory-game__tile-face" style={{ "--pair-hue": `${pair * 42}deg` } as CSSProperties}><span className="memory-game__tile-token">{pair % 2 === 0 ? "0" : "1"}</span></span>}
+              {isOpen && <span className="memory-game__tile-face" style={{ "--pair-hue": `${pair * 42}deg` } as CSSProperties}><MemoryBlob /></span>}
             </button>
           );
         })}

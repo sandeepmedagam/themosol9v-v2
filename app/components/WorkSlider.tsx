@@ -7,6 +7,7 @@ export type WorkItem = {
   category: string;
   title: string;
   description: string;
+  image: string;
 };
 
 type SwiperInstance = {
@@ -70,6 +71,10 @@ export default function WorkSlider({ items }: { items: WorkItem[] }) {
           <div className="swiper-wrapper">
             {items.map((item, index) => (
               <article className="swiper-slide work-slider__slide" key={item.title} aria-roledescription="slide" aria-label={`${index + 1} of ${total}`} aria-hidden={index !== activeIndex}>
+                <div className="work-slider__image-wrap">
+                  <img src={item.image} alt={item.title} loading="lazy" />
+                  <span className="work-slider__image-index">{String(index + 1).padStart(2, "0")}</span>
+                </div>
                 <div className="work-slider__content">
                   <div className="work-slider__progress" role="progressbar" aria-label="Work slide" aria-valuemin={1} aria-valuemax={total} aria-valuenow={index + 1}>
                     <span />
