@@ -14,19 +14,19 @@ import FAQAccordion from "@/app/components/FAQAccordion";
 import HeroBrand from "@/app/components/HeroBrand";
 
 const services = [
-  { title: "Design", copy: "Memorable brands and interfaces. We shape your identity, product design, and positioning so your product feels clear and distinctive.", code: "01", image: "https://cdn.prod.website-files.com/69b293a8de2706e604a565ce/69b8cb582beb1d50ae2f3185_O.avif" },
-  { title: "Build", copy: "Scalable tech with a weekly shipping cadence. We own the full stack—from MVP to infrastructure—delivering production-ready code every week.", code: "02", image: "https://cdn.prod.website-files.com/69b293a8de2706e604a565ce/69b8cb58d5c75d3ecd98502f_N.avif" },
-  { title: "Launch", copy: "Real traction, not vanity metrics. We drive GTM, pilots, and partnerships to accelerate adoption and growth.", code: "03", image: "https://cdn.prod.website-files.com/69b293a8de2706e604a565ce/69b8cb586246126888811e32_E.avif" },
+  { title: "Design", copy: "Memorable brands and interfaces. We shape your identity, product design, and positioning so your product feels clear and distinctive.", code: "01" },
+  { title: "Build", copy: "Scalable tech with a weekly shipping cadence. We own the full stack—from MVP to infrastructure—delivering production-ready code every week.", code: "02" },
+  { title: "Launch", copy: "Real traction, not vanity metrics. We drive GTM, pilots, and partnerships to accelerate adoption and growth.", code: "03" },
 ];
 
 const work: WorkItem[] = [
-  { category: "Brand Systems / Communication / Assets", title: "Turning Brand into a Working System", description: "Helped turn an existing brand into a more complete system the team could use consistently across touchpoints.", image: "https://cdn.prod.website-files.com/69b904dc5a76c96c398c84f3/69dccd854e6d62f474713a03_engame%20img-14.avif" },
-  { category: "Brand Strategy / Identity / Fundraising", title: "Clarifying the Story for Fundraising", description: "Reworked the brand and narrative to help the company show up more clearly in fundraising conversations.", image: "https://cdn.prod.website-files.com/69b904dc5a76c96c398c84f3/69dccd4cf9cf2a0cf6adfd44_agritrak%20img-12.avif" },
-  { category: "Brand / Identity / Healthcare", title: "Building a Brand Around Trust and Precision", description: "Created a clearer, more credible brand system for a physician-led care platform expanding its footprint.", image: "https://cdn.prod.website-files.com/69b904dc5a76c96c398c84f3/69dccce34f56ecd8a925c6ef_Travellier%20img.avif" },
-  { category: "Internal Systems / Engineering / Infrastructure", title: "Building the Systems Behind Growth", description: "Helped a fast-growing consumer brand put stronger internal systems in place as operations scaled.", image: "https://cdn.prod.website-files.com/69b904dc5a76c96c398c84f3/69dcd82214943751a716881c_ithaca%20hummus%20thumbnail.avif" },
-  { category: "Product Design / Loyalty", title: "Designing a Connected Loyalty Experience", description: "Designed the MVP for a loyalty experience connecting stores, customers, and operations in one system.", image: "https://cdn.prod.website-files.com/69b904dc5a76c96c398c84f3/69dcd86bc8db79ea217048e2_hra%20thumbnail.avif" },
-  { category: "Data / Platform / Infrastructure", title: "Powering a Circular Discovery Platform", description: "Built the underlying data engine needed to power discovery across circular economy programs and services.", image: "https://cdn.prod.website-files.com/69b904dc5a76c96c398c84f3/69dcd8ab88ff862aee169af8_circular%20eco%20thumbnail.avif" },
-  { category: "Product / GTM / Fundraising", title: "Shaping the Path from Idea to Product", description: "Worked closely with the founder to sharpen the product direction, user understanding, and investor story.", image: "https://cdn.prod.website-files.com/69b904dc5a76c96c398c84f3/69dcd8e3c892f10fea84543c_twendi%20thumbnail.avif" },
+  { category: "Brand Systems / Communication / Assets", title: "Turning Brand into a Working System", description: "Helped turn an existing brand into a more complete system the team could use consistently across touchpoints." },
+  { category: "Brand Strategy / Identity / Fundraising", title: "Clarifying the Story for Fundraising", description: "Reworked the brand and narrative to help the company show up more clearly in fundraising conversations." },
+  { category: "Brand / Identity / Healthcare", title: "Building a Brand Around Trust and Precision", description: "Created a clearer, more credible brand system for a physician-led care platform expanding its footprint." },
+  { category: "Internal Systems / Engineering / Infrastructure", title: "Building the Systems Behind Growth", description: "Helped a fast-growing consumer brand put stronger internal systems in place as operations scaled." },
+  { category: "Product Design / Loyalty", title: "Designing a Connected Loyalty Experience", description: "Designed the MVP for a loyalty experience connecting stores, customers, and operations in one system." },
+  { category: "Data / Platform / Infrastructure", title: "Powering a Circular Discovery Platform", description: "Built the underlying data engine needed to power discovery across circular economy programs and services." },
+  { category: "Product / GTM / Fundraising", title: "Shaping the Path from Idea to Product", description: "Worked closely with the founder to sharpen the product direction, user understanding, and investor story." },
 ];
 
 const reasons = [
@@ -51,35 +51,26 @@ const momentum = [
 ];
 
 const people = [
-  ["Bhuvish Mehta", "Founder", "Usually found talking to founders, thinking about sales, and getting excited about hard business problems.", "https://cdn.prod.website-files.com/69b904dc5a76c96c398c84f3/69c2810ddd42035a25b280cc_Bhuvish%20Mehta.avif"],
-  ["Kshitija Sarda", "Founding Team - Growth & Operations", "Keeps the trains running, the priorities clear, and the weekly momentum real.", "https://cdn.prod.website-files.com/69b904dc5a76c96c398c84f3/69c28115d8f1fdd95b369ee4_Kshitija.avif"],
-  ["Mike Deats", "Advisor | ex-Paychex, PrimePay", "Brings a calm, experienced view on systems, product, and building things properly.", "https://cdn.prod.website-files.com/69b904dc5a76c96c398c84f3/69c2812b85f116be5e268795_M%20Deats%20Headshot%20-%20Michael%20Deats.avif"],
-  ["Rob Poltrino", "Advisor | COO, SDH Capital", "Helps keep the business side sharp - from financial thinking to operational discipline.", "https://cdn.prod.website-files.com/69b904dc5a76c96c398c84f3/69c28137a733f1306b7f3250_Rob%20Poltrino.avif"],
-  ["Mike Della Porta", "Advisor | ex-CTO, Butler/Till", "Brings technology and growth experience from years of building and scaling real companies.", "https://cdn.prod.website-files.com/69b904dc5a76c96c398c84f3/69c28121fd70f838266c8aa1_MDP%20Headshot%20-%20Mike%20Della%20Porta.avif"],
+  ["Bhuvish Mehta", "Founder", "Usually found talking to founders, thinking about sales, and getting excited about hard business problems."],
+  ["Kshitija Sarda", "Founding Team - Growth & Operations", "Keeps the trains running, the priorities clear, and the weekly momentum real."],
+  ["Mike Deats", "Advisor | ex-Paychex, PrimePay", "Brings a calm, experienced view on systems, product, and building things properly."],
+  ["Rob Poltrino", "Advisor | COO, SDH Capital", "Helps keep the business side sharp - from financial thinking to operational discipline."],
+  ["Mike Della Porta", "Advisor | ex-CTO, Butler/Till", "Brings technology and growth experience from years of building and scaling real companies."],
 ];
 
-const clientLogos = [
-  ["twendi", "https://cdn.prod.website-files.com/69b293a8de2706e604a565ce/69ca6004302a7f6b80e70d30_twendi%20logo.svg"],
-  ["PreDiXome bio", "https://cdn.prod.website-files.com/69b293a8de2706e604a565ce/69d897de4fdb8dfcc7bfeb11_predixome-bio%20logo.svg"],
-  ["circular.eco", "https://cdn.prod.website-files.com/69b293a8de2706e604a565ce/69ca60048ac79e3ca54350ef_circular-eco%20logo.svg"],
-  ["Ithaca Hummus", "https://cdn.prod.website-files.com/69b293a8de2706e604a565ce/69ca600493f8e6e24dd06325_ithaca-hummus%20logo.svg"],
-  ["Agriotrak", "https://cdn.prod.website-files.com/69b293a8de2706e604a565ce/69d897de442ab9b1089cc4d6_agriotak%20logo.svg"],
-  ["Unify", "https://cdn.prod.website-files.com/69b293a8de2706e604a565ce/69ca60040cf7c29599d2bf19_unify%20logo.svg"],
-  ["Endgame Advisory", "https://cdn.prod.website-files.com/69b293a8de2706e604a565ce/69ca6004294cf400ea69df11_endgame-advisory%20logo.svg"],
-  ["HRA", "https://cdn.prod.website-files.com/69b293a8de2706e604a565ce/69ca6004eb8eb5fe378c2c1c_hra%20logo.svg"],
-];
+const clientLogos = ["twendi", "PreDiXome bio", "circular.eco", "Ithaca Hummus", "Agriotrak", "Unify", "Endgame Advisory", "HRA"];
 
 const stats = [
-  ["12+", "Years of experience", "https://cdn.prod.website-files.com/69b293a8de2706e604a565ce/69b8dc235426dde7452da952_Frame%20284.avif"],
-  ["23+", "Startups supported", "https://cdn.prod.website-files.com/69b293a8de2706e604a565ce/69b8da3760e9285f5e9f4d5a_Rectangle%2042.avif"],
-  ["51+", "Weeks of shipping", "https://cdn.prod.website-files.com/69b293a8de2706e604a565ce/69b8dc236a13b4d542dd0126_Frame%20285.avif"],
+  ["12+", "Years of experience"],
+  ["23+", "Startups supported"],
+  ["51+", "Weeks of shipping"],
 ];
 
 const testimonials = [
-  ["Bhuvish has helped our business tremendously. From ideation to fundraising strategy to building product. We couldn’t be more grateful for his contribution.", "Adam Franklin", "Founder & CEO, Twendi", "https://cdn.prod.website-files.com/69b904dc5a76c96c398c84f3/69cabf6d3af5ed228049802c_Adam%20_%20Twendi.avif"],
-  ["OVS delivered our product-spec site quickly with clear communication and professionalism. They understood our needs and built a reliable platform for managing product information.", "Tom McLernon", "Director, Ithaca Hummus", "https://cdn.prod.website-files.com/69b904dc5a76c96c398c84f3/69cabf82509b788add0b1b2b_Ithaca%20Hummus.avif"],
-  ["One Venture Studio delivered timely service and strong visual branding, fully understanding our goals. I’ll continue recommending promising opportunities to OVS.", "Ian Wilson, MD", "CEO & Co-Founder, Travelier IR Services LLC", "https://cdn.prod.website-files.com/69b904dc5a76c96c398c84f3/69cabf92599c96cf1cfccd10_Ian%20Wilson.avif"],
-  ["Team One Venture Studio provided strong design and architecture support and was a reliable partner throughout our project.", "Param Modi", "Product Development Engineer, HRA", "https://cdn.prod.website-files.com/69b904dc5a76c96c398c84f3/69cabf9b663d74611bce35ce_Param%20_%20HRA.avif"],
+  ["Bhuvish has helped our business tremendously. From ideation to fundraising strategy to building product. We couldn’t be more grateful for his contribution.", "Adam Franklin", "Founder & CEO, Twendi"],
+  ["OVS delivered our product-spec site quickly with clear communication and professionalism. They understood our needs and built a reliable platform for managing product information.", "Tom McLernon", "Director, Ithaca Hummus"],
+  ["One Venture Studio delivered timely service and strong visual branding, fully understanding our goals. I’ll continue recommending promising opportunities to OVS.", "Ian Wilson, MD", "CEO & Co-Founder, Travelier IR Services LLC"],
+  ["Team One Venture Studio provided strong design and architecture support and was a reliable partner throughout our project.", "Param Modi", "Product Development Engineer, HRA"],
 ];
 
 const faqs: [string, string][] = [
@@ -97,13 +88,6 @@ function IndexTag({ children }: { children: string }) {
 
 function SectionTitle({ index, children, dark = false }: { index: string; children: ReactNode; dark?: boolean }) {
   return <header className={`section-title${dark ? " section-title--dark" : ""}`}><IndexTag>{index}</IndexTag><h2>{children}</h2></header>;
-}
-
-function FounderMotif({ variant }: { variant: "founders" | "leaders" }) {
-  const src = variant === "founders"
-    ? "https://cdn.prod.website-files.com/69b293a8de2706e604a565ce/69b324c052ce26982522a45b_Layer_1.svg"
-    : "https://cdn.prod.website-files.com/69b293a8de2706e604a565ce/69b324c0a0df578a0bc2f9e4_Layer_1-1.svg";
-  return <img className="founder-motif" src={src} alt="" loading="lazy" />;
 }
 
 export default function HomePage() {
@@ -128,7 +112,7 @@ export default function HomePage() {
             <h2 id="clients-title"><span className="clients__title-line"><span>Clients</span><span className="clients__eye" aria-hidden="true"><span className="clients__eye-zero">0</span></span><span>Who</span></span><span className="clients__title-line">Chose Execution</span></h2>
           </header>
           <ul className="clients__list" aria-label="Our clients">
-            {clientLogos.map(([name, logo]) => <li className="clients__wordmark" key={name}><img src={logo} alt={name} loading="lazy" /></li>)}
+            {clientLogos.map((name) => <li className="clients__wordmark" key={name}>{name}</li>)}
           </ul>
         </section>
 
@@ -138,24 +122,24 @@ export default function HomePage() {
             <div className="founders__copy"><IndexTag>00010</IndexTag><p>We work best with founders, leaders, and CXOs who care about ownership, move with speed, value craft, and expect steady weekly progress.</p></div>
           </header>
           <div className="founder-grid">
-            <article className="founder-card"><div className="founder-art"><img src="https://cdn.prod.website-files.com/69b293a8de2706e604a565ce/69b3269ca7250e2366de64d4_Frame%20204.avif" alt="A diverse group of founders and builders" loading="lazy" /></div><div className="founder-card__body"><div className="founder-card__heading"><h3>Founders</h3><FounderMotif variant="founders" /></div><span className="founder-card__tag">EARLY STAGE</span><p>You’ve got conviction and high standards. You need a senior pod that can move fast, make decisions, and own outcomes - so you’re not spending weeks coordinating people.</p></div></article>
-            <article className="founder-card"><div className="founder-art"><img src="https://cdn.prod.website-files.com/69b293a8de2706e604a565ce/69b3268b2202472660ed9eb9_Frame%20278.avif" alt="Black and white portraits of six diverse individuals" loading="lazy" /></div><div className="founder-card__body"><div className="founder-card__heading"><h3>CXO’s &amp; Leaders</h3><FounderMotif variant="leaders" /></div><span className="founder-card__tag">1 → 10</span><p>You want innovation that actually ships and gets adopted - a real product line, not another internal initiative that starts strong and fades out.</p></div></article>
+            <article className="founder-card"><div className="founder-art" aria-hidden="true" /><div className="founder-card__body"><div className="founder-card__heading"><h3>Founders</h3></div><span className="founder-card__tag">EARLY STAGE</span><p>You’ve got conviction and high standards. You need a senior pod that can move fast, make decisions, and own outcomes - so you’re not spending weeks coordinating people.</p></div></article>
+            <article className="founder-card"><div className="founder-art" aria-hidden="true" /><div className="founder-card__body"><div className="founder-card__heading"><h3>CXO’s &amp; Leaders</h3></div><span className="founder-card__tag">1 → 10</span><p>You want innovation that actually ships and gets adopted - a real product line, not another internal initiative that starts strong and fades out.</p></div></article>
           </div>
         </section>
 
         <MemoryGame />
 
-        <section className="services section-dark" id="what-we-do" aria-labelledby="services-title"><header className="services__heading"><IndexTag>00011</IndexTag><h2 id="services-title">What we do</h2><span aria-hidden="true" /></header><div className="service-grid">{services.map(({ title, copy, code, image }, index) => <article className={`service-card service-card--${index + 1}`} key={title}><img className="service-card__image" src={image} alt="" loading="lazy" /><span className="service-card__number" aria-hidden="true">{code}</span><h3>{title}</h3><p>{copy}</p><span className="service-card__arrow" aria-hidden="true">↗</span></article>)}</div></section>
+        <section className="services section-dark" id="what-we-do" aria-labelledby="services-title"><header className="services__heading"><IndexTag>00011</IndexTag><h2 id="services-title">What we do</h2><span aria-hidden="true" /></header><div className="service-grid">{services.map(({ title, copy, code }, index) => <article className={`service-card service-card--${index + 1}`} key={title}><span className="service-card__number" aria-hidden="true">{code}</span><h3>{title}</h3><p>{copy}</p><span className="service-card__arrow" aria-hidden="true">↗</span></article>)}</div></section>
 
         <section className="work-section section-dark" id="our-work" aria-labelledby="work-title"><header className="work-section__heading"><IndexTag>00100</IndexTag><h2 id="work-title">Our Works</h2></header><WorkSlider items={work} /></section>
 
         <MotionPathSection />
 
-        <section className="stats-section section-light"><SectionTitle index="00101">Execution By Numbers</SectionTitle><div className="stats-grid">{stats.map(([number, label, image]) => <article key={label}><img src={image} alt="" loading="lazy" /><strong>{number}</strong><p>{label}</p></article>)}</div></section>
+        <section className="stats-section section-light"><SectionTitle index="00101">Execution By Numbers</SectionTitle><div className="stats-grid">{stats.map(([number, label]) => <article key={label}><strong>{number}</strong><p>{label}</p></article>)}</div></section>
 
-        <section className="why-section section-dark" aria-labelledby="why-title"><header className="why-section__heading"><div className="why-section__heading-inner"><IndexTag>Why Choose Us</IndexTag><h2 id="why-title">We are built to operate,<br />not just to deliver</h2></div></header><div className="why-content"><div className="why-art"><img src="https://cdn.prod.website-files.com/69b293a8de2706e604a565ce/69b8dd7abb06beafda801156_Rectangle%2058.avif" alt="Sculptural black form with flowing curves" loading="lazy" /><img src="https://cdn.prod.website-files.com/69b293a8de2706e604a565ce/69b8dd7abd2ee1f92849c54e_Rectangle%2060.avif" alt="A team collaborating around a laptop" loading="lazy" /></div><WhyFlipCards items={reasons} /></div></section>
+        <section className="why-section section-dark" aria-labelledby="why-title"><header className="why-section__heading"><div className="why-section__heading-inner"><IndexTag>Why Choose Us</IndexTag><h2 id="why-title">We are built to operate,<br />not just to deliver</h2></div></header><div className="why-content"><WhyFlipCards items={reasons} /></div></section>
 
-        <Testimonials items={testimonials.map(([quote, name, role, image]) => ({ quote, name, role, image }))} />
+        <Testimonials items={testimonials.map(([quote, name, role]) => ({ quote, name, role }))} />
 
         <ApproachSection items={approach} />
 
@@ -170,9 +154,8 @@ export default function HomePage() {
             <h2 id="team-title">Meet our team<br />and advisors</h2>
             <div><IndexTag>01010</IndexTag><p>Small team. Clear thinking. Fast moving. The best people to have in the room when things get messy.</p></div>
           </header>
-          <div className="team-roster">{people.map(([name, role, copy, image]) => <article className="team-roster__row" key={name} tabIndex={0}>
+          <div className="team-roster">{people.map(([name, role, copy]) => <article className="team-roster__row" key={name} tabIndex={0}>
             <div className="team-roster__identity"><h3>{name}</h3><span className="team-grid__role"><i aria-hidden="true" />{role}</span></div>
-            <img className="team-roster__portrait" src={image} alt={name} loading="lazy" />
             <p>{copy}</p>
           </article>)}</div>
           <div className="fund-section" aria-labelledby="fund-title"><div className="fund-section__title"><span className="fund-section__badge">ONE VENTURE FUND</span><h2 id="fund-title">COMING<br /><span>SOON...</span></h2></div><a className="outline-link" href="https://one-venturestudio.notion.site/One-Venture-Fund-coming-soon-33e465a6e52180799061e84fb9a75505" target="_blank" rel="noreferrer"><span className="fund-section__dot" aria-hidden="true" />KNOW MORE</a></div>

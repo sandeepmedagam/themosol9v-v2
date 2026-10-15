@@ -10997,3 +10997,33 @@ main > section:not(.hero):not(.ticker):not(.zero-faq-section) { padding-inline: 
 @media (prefers-reduced-motion: reduce) {
   .book-call > span:last-child, .contact-form .primary-cta, .fund-section .outline-link { transition: none; }
 }
+
+/* The page is text and shape led; keep the image slots removed from the layouts. */
+.work-slider__stage::before, .work-slider__stage::after { display: none; }
+.swiper.work-slider { width: 100%; }
+.work-slider__navigation { position: relative; inset: auto; height: auto; justify-content: flex-end; gap: 14px; margin-top: 22px; }
+.work-slider__navigation button:first-child,
+.work-slider__navigation button:last-child,
+.work-slider__navigation button:hover:not(:disabled),
+.work-slider__navigation button:last-child:hover:not(:disabled) { transform: none; }
+.stats-section .stats-grid article { grid-template-columns: minmax(0, max-content); grid-template-rows: auto auto; gap: 8px; }
+.stats-section .stats-grid article::before,
+.stats-section .stats-grid article::after { display: none; }
+.stats-section .stats-grid article strong,
+.stats-section .stats-grid article p { grid-column: 1; }
+.testimonial-card__portrait { background: #202020; }
+.testimonial-card__portrait::before { display: none; }
+.testimonial-card__portrait .testimonial-card__attribution { right: 56px; }
+.team-roster__row { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+.team-roster__row > p { grid-column: 2; }
+.team-roster__row:hover > p, .team-roster__row:focus-visible > p { transform: none; }
+.why-content { grid-template-columns: 1fr; grid-template-rows: auto; }
+.why-content .reason-grid { grid-column: 1; grid-row: auto; }
+.memory-game__tile-token { color: #ffdd00; font-family: var(--font-mono); font-size: clamp(1rem, 2.5vw, 2rem); font-weight: 600; line-height: 1; }
+@media (max-width: 900px) {
+  .team-roster__row { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+}
+@media (max-width: 640px) {
+  .team-roster__row { grid-template-columns: minmax(0, 1fr); }
+  .team-roster__row > p { grid-column: 1; }
+}
