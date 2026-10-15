@@ -3,7 +3,7 @@ import "./globals.css";
 import "./tokens.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.oneventurestudio.com"),
+  metadataBase: new URL("https://mosol9.com/"),
   title: "The Mosol9",
   description: "Weekly shipping cadence for early-stage founders and SMB leaders. We build, design, and launch with ownership - turning ambiguity into momentum.",
   alternates: { canonical: "/" },
