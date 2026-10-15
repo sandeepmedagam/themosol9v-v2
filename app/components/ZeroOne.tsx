@@ -165,7 +165,6 @@ export default function ZeroOne() {
                     >Ø</button>
                   ))}
                 </div>
-                <span className="zero-one__bin-label">ZERO <b>{String(zeros.length).padStart(2, "0")}</b></span>
               </div>
               <div className="zero-one__middle">
                 <button className="zero-one__move" type="button" onClick={() => moveToken(zeros.length ? 0 : 1)}>
@@ -188,7 +187,6 @@ export default function ZeroOne() {
                     >1</button>
                   ))}
                 </div>
-                <span className="zero-one__bin-label">ONE <b>{String(ones.length).padStart(2, "0")}</b></span>
               </div>
             </div>
           </div>
